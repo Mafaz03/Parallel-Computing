@@ -4,7 +4,7 @@
 using namespace std;
 
 void Hello(){
-     printf("Done from thread: %d out of: %d\n", omp_get_thread_num(), omp_get_num_threads());
+    printf("Done from thread: %d out of: %d\n", omp_get_thread_num(), omp_get_num_threads());
 }
 
 int main(int argc, const char * argv[]){
