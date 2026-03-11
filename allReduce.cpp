@@ -18,9 +18,7 @@ int main(int argc, char** argv){
             local_sum += a[i];
     }
     
-    MPI_Send(&local_sum, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
-
-    
+    // MPI_Send(&local_sum, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
 
     MPI_Allreduce(&local_sum,
                 &sum,
